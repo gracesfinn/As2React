@@ -16,6 +16,7 @@ import { action } from "@storybook/addon-actions";
 import ActorCard from "../src/components/actorCard";
 import ActorList from "../src/components/actorList";
 import ActorDetails from "../src/components/actorDetails";
+import ActorHeader from '../src/components/actorHeader'
 
 const sample = {
   adult: false,
@@ -163,6 +164,10 @@ storiesOf("Home Page/MovieCard", module)
 
 storiesOf("Actor Details Page/ActorDetails", module).add("default", () => (
   <ActorDetails person={sampleActor} />
+));
+
+storiesOf("Actor Details Page/ActorHeader", module).add("default", () => (
+  <ActorHeader person={sampleActor} />
 ));
 
 

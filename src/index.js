@@ -12,6 +12,7 @@ import GenresContextProvider from "./contexts/genresContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage';
 
 import ActorListPage from './pages/actorListPage';
+import ActorPage from './pages/actorDetailsPage'
 import ActorList from "./components/actorList";
 
 const sampleActor = {
@@ -50,6 +51,7 @@ const App = () => {
    <BrowserRouter>
       <div className="jumbotron">
       {/*<ActorList person={actor} /> */}
+       {/*<ActorPage person={sampleActor} /> */}
         <SiteHeader /> 
         <div className="container-fluid">
           <MoviesContextProvider>     {/* NEW  */}
