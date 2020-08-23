@@ -12,8 +12,10 @@ import { MemoryRouter } from "react-router";
 import GenresContextProvider from "../src/contexts/genresContext";
 import { action } from "@storybook/addon-actions";
 
+
 import ActorCard from "../src/components/actorCard";
 import ActorList from "../src/components/actorList";
+import ActorDetails from "../src/components/actorDetails";
 
 const sample = {
   adult: false,
@@ -158,6 +160,11 @@ storiesOf("Home Page/MovieCard", module)
     const actor= [sampleActor, sampleActor, sampleActor, sampleActor, sampleActor]
     return <ActorList person={actor} />
 });
+
+storiesOf("Actor Details Page/ActorDetails", module).add("default", () => (
+  <ActorDetails person={sampleActor} />
+));
+
 
 storiesOf("Home Page/FilterControls", module)
   .addDecorator(story => (
