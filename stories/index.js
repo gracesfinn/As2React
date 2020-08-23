@@ -13,6 +13,7 @@ import GenresContextProvider from "../src/contexts/genresContext";
 import { action } from "@storybook/addon-actions";
 
 import ActorCard from "../src/components/actorCard";
+import ActorList from "../src/components/actorList";
 
 const sample = {
   adult: false,
@@ -151,6 +152,12 @@ storiesOf("Home Page/MovieCard", module)
     const sampleNoPicture = { ...sampleActor, profile_path: undefined };
     return <ActorCard person={sampleNoPicture} />;
   });
+
+  storiesOf(" Actor Home Page/ActorList", module)
+  .add("default", () => {
+    const actor= [sampleActor, sampleActor, sampleActor, sampleActor, sampleActor]
+    return <ActorList person={actor} />
+});
 
 storiesOf("Home Page/FilterControls", module)
   .addDecorator(story => (
