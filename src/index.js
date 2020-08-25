@@ -12,8 +12,10 @@ import GenresContextProvider from "./contexts/genresContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage';
 
 import ActorListPage from './pages/actorListPage';
-import ActorPage from './pages/actorDetailsPage'
-import ActorList from "./components/actorList";
+import ActorPage from './pages/actorDetailsPage';
+{/*import ActorList from './components/actorList'*/}
+
+
 
 const sampleActor = {
   birthday: "1968-03-02",
@@ -50,7 +52,7 @@ const App = () => {
   return (
    <BrowserRouter>
       <div className="jumbotron">
-      {/*<ActorList person={actor} /> */}
+      {/*<ActorList /> */}
        {/*<ActorPage person={sampleActor} /> */}
         <SiteHeader /> 
         <div className="container-fluid">
@@ -61,8 +63,9 @@ const App = () => {
           <Route path="/reviews/:id" component={MovieReviewPage} /> 
           <Route exact path="/movies/favorites" component={FavoriteMoviesPage} />
           <Route path="/movies/:id" component={MoviePage} />
+          <Route path="/person/:id" component={ActorPage} />
+          <Route path="/actors" component={ActorListPage} />
           <Route path="/" component={HomePage} />
-          <Route path="/actor" component={ActorListPage} />
           <Redirect from="*" to="/" />
         </Switch>
         </GenresContextProvider>    {/* NEW */}
