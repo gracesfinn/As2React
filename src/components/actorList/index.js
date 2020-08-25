@@ -3,8 +3,8 @@ import ActorCard from "../actorCard/";
 import "./actorList.css";
 
 const ActorList = (props) => {
-  const actorCards = props.person.map(a => (
-    <ActorCard key={a.id} person={a} />
+  const actorCards = props.popular.map(popular => (
+    <ActorCard key={popular.id} popular={popular} />
   ));
   return <div className="row movies bg-info">
       {actorCards}

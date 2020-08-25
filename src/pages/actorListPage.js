@@ -1,4 +1,7 @@
 import React , {useState, useEffect} from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ActorList from "../components/actorList";
+
 import axios from 'axios'
 import { render } from "react-dom";
 
@@ -30,6 +33,8 @@ export default ActorListPage; */}
 
 
 const ActorListPage = () => {
+
+    
  const [popular, setPerson] = useState([])
 
  useEffect (() => {
@@ -48,28 +53,42 @@ const ActorListPage = () => {
         return(
             <>
             <h4>Popular Actors</h4>
-            
-         <div> 
-            <ul>
-                {
+
+            <ActorList popular ={popular}/>
+                {/*{
                     popular.map(popular  =>
-
+                        <div className="row movies bg-info">
+                        <div className="col-sm-3">
+                     <div className="card  bg-white" key={popular.id}>
+                            <img
+                              className="card-img-tag center "
+                                 key={popular.id}
+                                src={popular.profile_path
+                                     ? `https://image.tmdb.org/t/p/w500/${popular.profile_path}`
+                                        : "./film-poster-placeholder.png"}></img>
                         
-
-
-
-                        <li key={popular.id}>
-                            {popular.name}
-                        </li>
+                    <div className="card-body">
+                        <h4 className="card-title ">{popular.name}</h4>
+                        </div>
+                     <div className="card-footer">
+                        <button type="button" className="btn w-100 btn-primary">
+                            Find Out More
+                        </button>
+                    </div>
+                    </div>
+            
+                    </div>
+                    </div>
                         
-                        
-                        
-                        
+                     
                         )
-                }
-            </ul>
+                } */}
+                 
+            
 
            {/* <div className="col-sm-3">
+
+           <
       <div className="card  bg-white">
         <img
           className="card-img-tag center "
@@ -97,15 +116,15 @@ const ActorListPage = () => {
           </button>
         </div>
       </div>
-        </div> */}
+        </div> 
             
            
+            */}
             
-            
-
-         </div>
+           
+      
          </>
-        )
+        ) 
   
 }
 
