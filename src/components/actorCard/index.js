@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import "./actorCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../../globals/fontawesome";
@@ -27,21 +28,21 @@ const ActorCard = () => {
                         
                         <div className="col-sm-3">
                      <div className="card  bg-white" key={popular.id}>
+                         <Link to={`/person/${popular.id}`}>
                             <img
                               className="card-img-tag center "
                                  key={popular.id}
-                                src={popular.profile_path
+                                src={
+                                    popular.profile_path
                                      ? `https://image.tmdb.org/t/p/w500/${popular.profile_path}`
-                                        : "./film-poster-placeholder.png"}></img>
-                        
+                                        : "./film-poster-placeholder.png"
+                                    }
+                            />
+                        </Link>
                     <div className="card-body">
                         <h4 className="card-title ">{popular.name}</h4>
                         </div>
-                     <div className="card-footer">
-                        <button type="button" className="btn w-100 btn-primary">
-                            Find Out More
-                        </button>
-                    </div>
+                     
                     </div>
             
                     </div>

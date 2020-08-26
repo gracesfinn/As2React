@@ -2,34 +2,6 @@ import React , {useState, useEffect} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ActorList from "../components/actorList";
 
-import axios from 'axios'
-import { render } from "react-dom";
-
-{/* import React, {useState, useEffect } from "react";
-import Header from "../components/headerMovieList";
-import ActorList from "../components/actorList";
-import FilterControls from "../components/filterControls";
-import PageTemplate from '../components/templateActorListPage'
-import { getActors } from "../api/tmdb-api";
-
-{/*const ActorListPage = () => {
-
-    const [actors, setActors] = useState([]);
-    useEffect(() => {
-        getActors().then(actors => {
-          setActors(actors);
-        });
-      }, []);
-  return (
-    
-      <PageTemplate
-      person={actors} 
-      />
-    
-  );
-};
-
-export default ActorListPage; */}
 
 
 const ActorListPage = () => {
