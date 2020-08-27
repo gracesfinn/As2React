@@ -41,5 +41,14 @@ export const getMovies = () => {
   export const getActor = id => {
     return fetch(
       `https://api.themoviedb.org/3/person/${id}?api_key=${process.env.REACT_APP_TMDB_KEY}`
-    ).then(res => res.json());
+    )
+    .then(res => res.json());
+  };
+
+  export const getCredits = id => {
+    return fetch(
+      `https://api.themoviedb.org/3/person/${id}/movie_credits?api_key=${process.env.REACT_APP_TMDB_KEY}`
+    )
+    .then(res => res.json())
+    .then(json => json.results);
   };
