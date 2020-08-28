@@ -2,7 +2,7 @@
 
 ## Modified Movie Fan App
 
-Name: Grace Finnerty
+#### Grace Finnerty
 
 ## Overview.
 
