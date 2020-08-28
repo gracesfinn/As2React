@@ -8,13 +8,14 @@ import { Card,  Col, Row, Space} from 'antd';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MovieCard = ({movie, action}) => {
-  const { Meta } = Card;
+  
   return (
     <div className="col-sm-3">
       <div className="card  bg-white">
     <Link to={`/movies/${movie.id}`}>
       <img
         className="card-img-tag center "
+        
         alt={movie.title}
         src={
           movie.poster_path
@@ -35,10 +36,15 @@ const MovieCard = ({movie, action}) => {
         </p>
       </div>
       <div className="card-footer">
-         {action(movie)}
+          
+          {action(movie)}
+          
+      
+         
       </div>
     </div>
     </div>
+    
     
   
     );

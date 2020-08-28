@@ -11,13 +11,12 @@ const AddToFavoriteButton = ({ movie }) => {
     context.addToFavorites(movie.id);
   };
   return (
-    <Button
-      type="primary"
-      onClick={handleAddToFavorite}
+    <button type="button" className="btn w-100 btn-primary"  onClick={handleAddToFavorite}
     block>
+    
      
       Add to Favorites
-    </Button>
+    </button>
   );
 };
 

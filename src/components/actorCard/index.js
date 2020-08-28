@@ -30,7 +30,8 @@ const ActorCard = () => {
                      <div className="card  bg-white" key={popular.id}>
                          <Link to={`/person/${popular.id}`}>
                             <img
-                              className="card-img-tag center "
+                              className="card-img-tag center"
+                              
                                  key={popular.id}
                                 src={
                                     popular.profile_path

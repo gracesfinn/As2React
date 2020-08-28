@@ -14,7 +14,7 @@ const ReviewForm = ({ movie, history }) => {
   };
 
   return (
-    <form className="form bg-dark text-light" onSubmit={handleSubmit(onSubmit)}>
+    <form className="form bg-light text-light" onSubmit={handleSubmit(onSubmit)}>
       <h3>Add your review</h3>
       <div className="form-group">
         <input
@@ -44,6 +44,7 @@ const ReviewForm = ({ movie, history }) => {
       {errors.content && (
         <p className="text-white">{errors.content.message} </p>
       )}
+   
 
       <button type="submit" className="btn btn-primary">
         Submit
@@ -60,6 +61,7 @@ const ReviewForm = ({ movie, history }) => {
       >
         Reset
       </button>
+      
     </form>
   );
 };

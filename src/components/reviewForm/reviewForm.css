@@ -5,3 +5,7 @@
 button.reset {
     margin-left: 20px;
 }
+
+button.submit {
+    margin-top: 10px;
+}

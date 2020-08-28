@@ -9,6 +9,7 @@ const TemplateMoviePage = ({ movie, children }) => {
       <div className="row">
         <div className="col-3">
           <img
+          class="img-thumbnail"
             src={
               movie.poster_path
                 ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
