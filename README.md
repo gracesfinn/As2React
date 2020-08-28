@@ -16,8 +16,17 @@ The two new pages which successfully render are:
 
 ## Setup requirements.
 
-run 
-npm install
+Clone this repo.  Open an integrate terminal and run:
+
+$ npm install
+
+The MoviesApp communicates with The TMDB API. All requests to the API are authenticated by an API KEY. You should now acquire a personal key for your development by following these steps:
+
++ Signup for an account.
++ Log in to your account and click the "API" link in the left hand side bar of your account page.
++ In VS Code, in the project base folder create a new file called .env with the following content:
+
+REACT_APP_TMDB_KEY=.... your API key value ...
 
 ## API Data Model.
 
