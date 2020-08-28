@@ -7,7 +7,7 @@ Name: Grace Finnerty
 ## Overview.
 
 My plan for this assignment was to utilise the labs and apply what I had created for displaying movies to the actor information stored on TmDB. 
-I focused on displaying a list of the most popular actors at the moment, and creating a page that had details about them and the movies they were best knonw for. I was able to successfully retrieve and display this information with the expection of the movies the actors had starred in. The credits component is created and save into the project however it is not active at this time. 
+I focused on displaying a list of the most popular actors at the moment, and creating a page that had details about them and the movies they were best known for. I was able to successfully retrieve and display this information with the exception of the movies the actors had starred in. The credits component is created and save into the project however it is not active at this time. 
 
 The two new pages which successfully render are:
  + Popular Actors
@@ -81,4 +81,4 @@ The following route have been added to the Movies App:
 
 
 ## Independent learning.
-To expand on some of the UI I downloaded the ant library to my project. I tested some of the different feature, used them for some feauters. However, due to time constraints I did not utilise it as much as  I would have liked.
+To expand on some of the UI I downloaded the ant library to my project. I tested some of the different feature, used them for some features. However, due to time constraints I did not utilise it as much as I would have liked.
