@@ -33,7 +33,7 @@ npm install
 
 ### Component catalogue.
 
-![alt text] (https://github.com/gracesfinn/As2React/blob/master/public/images/ActorStories.png "ActorStories")
+![alt text](https://github.com/gracesfinn/As2React/blob/master/public/images/ActorStories.png "ActorStories")
 
 ### UI Design.
 
