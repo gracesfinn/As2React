@@ -6,7 +6,7 @@ const ActorList = (props) => {
   const actorCards = props.popular.map(popular => (
     <ActorCard key={popular.id} popular={popular} />
   ));
-  return <div className="row movies bg-info">
+  return <div className="row movies">
       {actorCards}
       </div>;
 };

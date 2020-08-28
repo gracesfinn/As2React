@@ -3,6 +3,10 @@ import { Link } from "react-router-dom";
 import "../../globals/fontawesome";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./siteHeader.css";
+import 'antd/dist/antd.css';
+import { Layout, Menu, Breadcrumb, Anchor, PageHeader } from 'antd';
+
+const { Header, Content, Footer } = Layout;
 
 const SiteHeader = () => {
   return (
@@ -46,6 +50,6 @@ const SiteHeader = () => {
       </nav>
     </nav>
   );
-};
+}; 
 
 export default SiteHeader;

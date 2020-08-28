@@ -1,6 +1,21 @@
 import React, { useContext } from "react";
 import "./filterControls.css";
 import { GenresContext } from '../../contexts/genresContext' 
+import 'antd/dist/antd.css';
+import { Input, Menu, Dropdown, Button, } from 'antd';
+import { AudioOutlined } from '@ant-design/icons';
+
+const { Search } = Input;
+
+const suffix = (
+  <AudioOutlined
+    style={{
+      fontSize: 16,
+      color: '#1890ff',
+    }}
+  />
+);
+
 
 const FilterControls = props => {
   const context = useContext(GenresContext);
@@ -16,17 +31,25 @@ const FilterControls = props => {
     handleChange(e, "genre", e.target.value);
   };
 
+
   return (
-    <div className="row bg-warning">
-      <div className="col-md-12">
-        <h4>
-          <span>List Filtering:</span>
+    <div class="card">
+    <div class="card-body">
+  
+     
+    
+    <div class="input-group mb-3">
+      <div class="input-group-prepend ">
+        
+        
+        <span class="input-group-text justify-content-center" id="inputGroup-sizing-default">List Filtering:</span>
           <input
-            type="text"
-            placeholder="Title Search"
-            onChange={handleTextChange}
-          />
-          <span>Genre:</span>
+      placeholder="Title Search"
+      onChange={handleTextChange}
+      style={{ width: 200 }}
+    />
+          <span class="input-group-text" id="inputGroup-sizing-default">Genres:</span>
+    
           <select id="genre" onChange={handleGenreChange}>
             {context.genres.map(genre => {
               return (
@@ -36,9 +59,11 @@ const FilterControls = props => {
               );
             })}
           </select>
-        </h4>
+        
       </div>
     </div>
+    </div>
+  </div>
   );
 };
 

@@ -14,7 +14,7 @@ const MovieListPage = () => {
   return (
     <>
     <Layout>
-      <Sider>Sider</Sider>
+    
      </Layout>
 
       <Layout>
@@ -28,6 +28,7 @@ const MovieListPage = () => {
        </Content>
       </Layout>
       </>
+    
   );
 };
 

@@ -3,14 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ActorList from "../components/actorList";
 
 
-
 const ActorListPage = () => {
-
-    
- const [popular, setPerson] = useState([])
+    const [popular, setPerson] = useState([])
 
  useEffect (() => {
-     fetch(`https://api.themoviedb.org/3/person/popular?api_key=${process.env.REACT_APP_TMDB_KEY}`)
+     fetch(`https://api.themoviedb.org/3/person/popular?api_key=${process.env.REACT_APP_TMDB_KEY}&page=1`)
      .then(res => res.json())
       .then(json => {
         console.log(json)

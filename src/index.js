@@ -10,10 +10,15 @@ import SiteHeader from './components/siteHeader';
 import MoviesContextProvider from "./contexts/moviesContext";
 import GenresContextProvider from "./contexts/genresContext";
 import AddMovieReviewPage from './pages/addMovieReviewPage';
+import { Layout, Menu, Breadcrumb, Anchor } from 'antd';
+
+
 
 import ActorListPage from './pages/actorListPage';
 import ActorPage from './pages/actorDetailsPage';
 {/*import ActorList from './components/actorList'*/}
+
+const { Header, Content, Footer } = Layout;
 
 
 
@@ -52,9 +57,8 @@ const App = () => {
   return (
    <BrowserRouter>
       <div className="jumbotron">
-      {/*<ActorList /> */}
-       {/*<ActorPage person={sampleActor} /> */}
         <SiteHeader /> 
+        <Layout>
         <div className="container-fluid">
           <MoviesContextProvider>     {/* NEW  */}
           <GenresContextProvider>    {/* NEW */}
@@ -70,7 +74,10 @@ const App = () => {
         </Switch>
         </GenresContextProvider>    {/* NEW */}
           </MoviesContextProvider>
+      
         </div>
+        <Footer style={{ textAlign: 'center' }}>Movie Database - Source tbdb.org </Footer>
+        </Layout>
       </div>
     </BrowserRouter>
     );
