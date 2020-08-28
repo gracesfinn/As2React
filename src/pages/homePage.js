@@ -13,9 +13,6 @@ const MovieListPage = () => {
 
   return (
     <>
-    <Layout>
-    
-     </Layout>
 
       <Layout>
       <Content>

@@ -1,11 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import 'antd/dist/antd.css';
 import { CalendarTwoTone, StarTwoTone } from '@ant-design/icons';
 import "../../globals/fontawesome";
-import { Card,  Col, Row, Space} from 'antd';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const MovieCard = ({movie, action}) => {
   
@@ -26,62 +23,25 @@ const MovieCard = ({movie, action}) => {
       </Link>
       <div className="card-body">
         <h4 className="card-title ">{movie.title}</h4>
+         <p>
+            <CalendarTwoTone />
+              <span> {movie.release_date}</span>
+          </p>
         <p>
-        <CalendarTwoTone />
-          <span> {movie.release_date}</span>
-        </p>
-        <p>
-        <StarTwoTone />
-          <span> {movie.vote_average}</span>
+            <StarTwoTone />
+              <span> {movie.vote_average}</span>
         </p>
       </div>
-      <div className="card-footer">
-          
-          {action(movie)}
-          
-      
-         
+      <div className="card-footer">  
+          {action(movie)} 
       </div>
     </div>
-    </div>
+  </div>
     
-    
-  
     );
   };
   
   export default MovieCard;
 
 
-    {/*
-    <div className="col-sm-3">
-      
-      <Link to={`/movies/${movie.id}`}>
-        <img
-          className="card-img-tag center "
-          alt={movie.title}
-          src={
-            movie.poster_path
-              ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
-              : "./film-poster-placeholder.png"
-          }
-        />
-        </Link>
-        <div className="card-body">
-          <h4 className="card-title ">{movie.title}</h4>
-          <p>
-          <CalendarTwoTone />
-            <span> {movie.release_date}</span>
-          </p>
-          <p>
-          <StarTwoTone />
-            <span> {movie.vote_average}</span>
-          </p>
-        </div>
-        <div className="card-footer">
-           {action(movie)}
-        </div>
-      </div>
-      
-    </div>
-        */}
+   

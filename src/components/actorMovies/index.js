@@ -1,12 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { getActorMovies } from "../../api/tmdb-api"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-export default ({credits}) =>{
 
-
+export default ({credits}) =>{   /* NOT WORKINIG??*/ 
+ 
 return (
     <>
     <table className="table table-striped table-bordered table-hover">
@@ -18,16 +15,13 @@ return (
         </tr>
       </thead>
       <tbody>
-       
               <tr >
                 <td>{credits.release_date}</td>
                 <td>{credits.title}</td>
                 <td>{credits.character}</td>
               </tr>
               
-          )
-            
-          
+          ) 
       </tbody>
       </table>
 

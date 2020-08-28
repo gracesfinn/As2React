@@ -43,14 +43,9 @@ const ActorCard = () => {
                     <div className="card-body">
                         <h4 className="card-title ">{popular.name}</h4>
                         </div>
-                     
                     </div>
-            
                     </div>
-                    
-                        
-                     
-                        )
+                 )
                 }
                 </>
         )

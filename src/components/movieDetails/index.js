@@ -44,8 +44,6 @@ export default ({ movie }) => {
         
       </Descriptions>
       
-      
-     
     </>
   );
 };

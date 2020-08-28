@@ -24,10 +24,6 @@ export default ({person}) => {
             <li key="rdv" className="list-group-item ">
               {person.place_of_birth}
             </li></ul>
-        
-            
-           
-    
         </>
     )
 };
